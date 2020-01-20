@@ -1,0 +1,29 @@
+{
+  "name": "bcp-print-all-variables",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MBCP Print all my variables",
+  "main": "index.js",
+  "scripts": {
+    "package": "npm run clean  && npm run compile  && tfx extension create  --rev-version",
+    "gallery-publish": "tfx extension publish --rev-version",
+    "clean": "rimraf ./*.vsix",
+    "compile": "tsc -p .",
+    "install-task-lib": "cd printAllVariables && npm install --save-dev"
+  },
+  "author": "Kaue Mendes",
+  "license": "ISC",
+  "dependencies": {
+    "@types/js-base64": "^2.3.1",
+    "azure-pipelines-task-lib": "^2.9.3",
+    "js-base64": "^2.5.1",
+    "util": "^0.12.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.12.6",
+    "@types/q": "^1.5.2",
+    "sync-request": "^6.1.0",
+    "typescript": "2.3.4"
+  }
+}

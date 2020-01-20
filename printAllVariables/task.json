@@ -1,0 +1,42 @@
+{
+    "id": "7d7858ca-d427-4859-9569-d993463f07ac",
+    "name": "printAllVariables",
+    "friendlyName": "MBCP Print All Variables",
+    "description": "Print all variables in lower case or upper case by your choice",
+    "helpMarkDown": "[More Information](https://scs.millenniumbcp.net/PT.BCP/BCP.ALM.Team/_git/azure-devops-print-all-variables)",
+    "category": "Utility",
+    "visibility": ["Build","Release"],
+    "author": "",
+    "version": {
+       "Major": 1,
+       "Minor": 0,
+       "Patch": 0
+    },
+    "inputs": [
+        {
+            "name": "type_input_transform",
+            "type": "pickList",
+            "label": "How would you like your variables?",
+            "defaultValue": "asItis",
+            "required": true,
+            "helpMarkDown": "Choose how would you like your variables to be re-set, lower case, upper case or leave as it is.",
+            "options": {
+                "lower": "Lower Case",
+                "upper": "Upper Case",
+                "asItis": "Leave as it is"
+            }
+        },
+        {
+            "name": "separator_into_variable",
+            "type": "string",
+            "label": "Choose the separator character:",
+            "defaultValue": ".",
+            "required": true,
+            "helpMarkDown": "You can choose the separator between the string"
+        }
+    ],
+    "instanceNameFormat": "MBCP Print All Variables",
+    "execution":
+     {"Node":{"target":"printAllVariables.js"}}
+    
+ }

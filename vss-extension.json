@@ -1,0 +1,41 @@
+{
+	"manifestVersion": 1,
+	"id": "printAllVariables",
+	"name": "MBCP Print all my variables",
+    "description": "Print all my variables in lower case by default or pass a parameter to convert to upper case",
+	"version": "0.0.0",
+	"publisher": "KaueMendesdeFreitas",
+	"targets": [{
+		"id": "Microsoft.VisualStudio.Services"
+	}],
+	"tags": [
+		"Azure Pipelines"
+	],
+	"categories": [
+		"Azure Pipelines"
+	],
+	"icons": {
+		"default": "static/images/icon.png"
+	},
+	"repository": {
+		"type": "git",
+		"uri": "https://scs.millenniumbcp.net/PT.BCP/BCP.ALM.Team/_git/azure-devops-print-all-variables"
+	},
+	"contributions": [
+		{
+		  "id": "printAllVariables",
+		  "targets": [
+			"ms.vss-distributed-task.tasks"
+		  ],
+		  "type": "ms.vss-distributed-task.task",
+		  "properties": {
+			"name": "printAllVariables"
+		  }
+		}
+	],
+	"files": [
+		{
+		  "path": "printAllVariables"
+		}
+	]
+}
