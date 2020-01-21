@@ -52,8 +52,8 @@ async function run() {
                     break;
             }
 
-            tl.setTaskVariable(newName, newValue);
-            tl.setVariable(newName, newValue);
+            tl.setTaskVariable(newName, newValue, element.secret);
+            tl.setVariable(newName, newValue, element.secret);
             console.log(newName + " => " + newValue);
         });
         tl.setResult(tl.TaskResult.Succeeded, 'DONE');
