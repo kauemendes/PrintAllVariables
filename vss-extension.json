@@ -1,9 +1,9 @@
 {
 	"manifestVersion": 1,
-	"id": "printAllVariables",
+	"id": "MBCPPrintAllVariables",
 	"name": "MBCP Print all my variables",
     "description": "Print all my variables in lower case by default or pass a parameter to convert to upper case",
-	"version": "0.0.0",
+	"version": "0.0.3",
 	"publisher": "KaueMendesdeFreitas",
 	"targets": [{
 		"id": "Microsoft.VisualStudio.Services"
