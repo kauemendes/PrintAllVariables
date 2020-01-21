@@ -3,6 +3,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const path = require("path");
 const assert = require("assert");
 const ttm = require("azure-pipelines-task-lib/mock-test");
+const allVariables = [
+    {
+        name: 'All.Value_Variables',
+        value: 'This.IsTheValue.2',
+        secret: false
+    },
+    {
+        name: 'ThereisAnotheValue.2',
+        value: 'This.IsTheValue.2',
+        secret: false
+    },
+    {
+        name: 'Super:Culture>This.2',
+        value: 'SCMME0001LI002',
+        secret: false
+    }
+];
 describe('Sample task tests', function () {
     before(function () {
     });

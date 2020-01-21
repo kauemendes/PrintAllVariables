@@ -9,7 +9,7 @@
     "author": "Kaue Mendes @ Millennium BCP 2020",
     "version": {
        "Major": 1,
-       "Minor": 1,
+       "Minor": 2,
        "Patch": 0
     },
     "inputs": [
@@ -30,8 +30,8 @@
             "name": "separator_into_variable",
             "type": "string",
             "label": "Choose the separator character:",
-            "defaultValue": ".",
-            "required": true,
+            "defaultValue": null,
+            "required": false,
             "helpMarkDown": "You can choose the separator between the string"
         }
     ],

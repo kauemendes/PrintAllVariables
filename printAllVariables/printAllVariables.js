@@ -18,7 +18,7 @@ function run() {
             let typeVariableTransformation = tl.getInput("type_input_transform");
             let separatorIntoVariable = tl.getInput("separator_into_variable");
             if (util_1.isNullOrUndefined(separatorIntoVariable)) {
-                separatorIntoVariable = '.';
+                console.log("INFO: Separators are set as default");
             }
             var sortedArray = allVariables.sort((obj1, obj2) => {
                 if (obj1.name > obj2.name) {
@@ -29,25 +29,36 @@ function run() {
                 }
                 return 0;
             });
-            console.log("All the variables in this format: [variable name] => value");
+            console.log("INFO: All the variables in this format: [variable name] => value");
             sortedArray.forEach(element => {
-                let newName = element.name.replace(/\_/g, separatorIntoVariable);
-                newName = newName.replace(/\-/g, separatorIntoVariable);
-                newName = newName.replace(/\./g, separatorIntoVariable);
+                let newValue = element.value;
+                let newName = element.name;
+                if (!util_1.isNullOrUndefined(separatorIntoVariable)) {
+                    // Changes all occurrancies
+                    newName = newName.replace(/\_/g, separatorIntoVariable);
+                    newName = newName.replace(/\-/g, separatorIntoVariable);
+                    newName = newName.replace(/\./g, separatorIntoVariable);
+                    newName = newName.replace(/\>/g, separatorIntoVariable);
+                    newName = newName.replace(/\</g, separatorIntoVariable);
+                    newName = newName.replace(/\:/g, separatorIntoVariable);
+                }
                 switch (typeVariableTransformation) {
                     case 'lower':
+                        newValue = newValue.toLowerCase();
                         newName = newName.toLowerCase();
                         break;
                     case 'upper':
+                        newValue = newValue.toUpperCase();
                         newName = newName.toUpperCase();
                         break;
                     default:
                         break;
                 }
-                tl.setTaskVariable(newName, element.value);
-                tl.setVariable(newName, element.value);
-                console.log(newName + " => " + element.value);
+                tl.setTaskVariable(newName, newValue);
+                tl.setVariable(newName, newValue);
+                console.log(newName + " => " + newValue);
             });
+            console.log(tl.getVariables());
             tl.setResult(tl.TaskResult.Succeeded, 'DONE');
         }
         catch (err) {
