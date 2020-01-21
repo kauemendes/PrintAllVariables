@@ -58,7 +58,6 @@ function run() {
                 tl.setVariable(newName, newValue);
                 console.log(newName + " => " + newValue);
             });
-            console.log(tl.getVariables());
             tl.setResult(tl.TaskResult.Succeeded, 'DONE');
         }
         catch (err) {
