@@ -39,12 +39,12 @@ async function run() {
             
             switch (typeVariableTransformation) {
                 case 'lower':
-                    newValue = newValue.toLowerCase()
+                    if(!element.secret) newValue = newValue.toLowerCase()
                     newName = newName.toLowerCase()
                     break;
 
                 case 'upper':
-                    newValue = newValue.toUpperCase()
+                    if(!element.secret) newValue = newValue.toUpperCase()
                     newName = newName.toUpperCase()
                     break;
             
@@ -54,6 +54,7 @@ async function run() {
 
             tl.setTaskVariable(newName, newValue, element.secret);
             tl.setVariable(newName, newValue, element.secret);
+            if(element.secret) console.log(">>>>>> This is a SECRET, value not changed <<<<<<");
             console.log(newName + " => " + newValue);
         });
         tl.setResult(tl.TaskResult.Succeeded, 'DONE');

@@ -5,9 +5,9 @@ const assert = require("assert");
 const ttm = require("azure-pipelines-task-lib/mock-test");
 const allVariables = [
     {
-        name: 'All.Value_Variables',
+        name: 'ALL_VALUE_VARIABLES',
         value: 'This.IsTheValue.2',
-        secret: false
+        secret: true
     },
     {
         name: 'ThereisAnotheValue.2',
