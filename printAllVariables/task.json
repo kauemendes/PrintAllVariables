@@ -9,7 +9,7 @@
     "author": "Kaue Mendes @ Millennium BCP 2020",
     "version": {
        "Major": 1,
-       "Minor": 5,
+       "Minor": 10,
        "Patch": 0
     },
     "inputs": [
@@ -25,6 +25,29 @@
                 "upper": "Upper Case",
                 "asItis": "Leave as it is"
             }
+        },
+        {
+            "name": "filtered_variables",
+            "type": "multiLine",
+            "label": "Put your variables name in this list:",
+            "required": false,
+            "helpMarkDown": "To manipulate the environment variables you need to insert in here which variable you would like to transform."
+        },
+        {
+            "name": "change_variable_name",
+            "type": "boolean",
+            "label": "Manipulate Variable NAME",
+            "defaultValue": false,
+            "required": false,
+            "helpMarkDown": "This option enable transforming variable names."
+        },
+        {
+            "name": "change_variable_value",
+            "type": "boolean",
+            "label": "Manipulate Variable VALUE",
+            "defaultValue": false,
+            "required": false,
+            "helpMarkDown": "This option enable transforming variable values."
         },
         {
             "name": "separator_into_variable",
