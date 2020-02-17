@@ -1,8 +1,8 @@
 {
-    "id": "91ef9bf3-acfa-460f-b7e2-f75e8acf555d",
+    "id": "c588671c-4452-4fac-b33b-0a2585ebae9b",
     "name": "MBCPPrintAllVariables",
     "friendlyName": "MBCP Print All Variables",
-    "description": "Print all variables in lower case or upper case by your choice",
+    "description": "MBCP Print all variables in lower case or upper case by your choice",
     "helpMarkDown": "[More Information](https://scs.millenniumbcp.net/PT.BCP/BCP.ALM.Team/_git/azure-devops-print-all-variables) © Millennium BCP 2020",
     "category": "Utility",
     "visibility": ["Build","Release"],
@@ -10,7 +10,7 @@
     "version": {
        "Major": 1,
        "Minor": 10,
-       "Patch": 0
+       "Patch": 1
     },
     "inputs": [
         {
