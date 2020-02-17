@@ -55,11 +55,34 @@ This task receives 3 parameters, called inputs.
       }
 },
 {
+      "name": "filtered_variables",
+      "type": "multiLine",
+      "label": "Put your variables name in this list:",
+      "required": false,
+      "helpMarkDown": "To manipulate the environment variables you need to insert in here which variable you would like to transform."
+},
+{
+      "name": "change_variable_name",
+      "type": "boolean",
+      "label": "Manipulate Variable NAME",
+      "defaultValue": false,
+      "required": false,
+      "helpMarkDown": "This option enable transforming variable names."
+},
+{
+      "name": "change_variable_value",
+      "type": "boolean",
+      "label": "Manipulate Variable VALUE",
+      "defaultValue": false,
+      "required": false,
+      "helpMarkDown": "This option enable transforming variable values."
+},
+{
       "name": "separator_into_variable",
       "type": "string",
       "label": "Choose the separator character:",
-      "defaultValue": ".",
-      "required": true,
+      "defaultValue": null,
+      "required": false,
       "helpMarkDown": "You can choose the separator between the string"
 }
 ```
@@ -68,8 +91,12 @@ The first one is responsible for choosing what type of transformation you would 
       - upper - For upper case variables
       - lower - For lower case variables
       - Leave as it is - For let the variables be at was written.
+      
 
 The second parameter is the variable separator. At this version the separator included to be replaced is: dot, underscore and hyphen. The replacement will only occur on the name of the variables. You can choose whatever separator suits you.
+
+- filtered_variables: Add the variables you want to manipulate, the variables value or name only will be change if is into this parameter
+- change_variable_value or change_variable_name: If setted with true will manipulate the value or name respectively.
 
 # Contribution
 
