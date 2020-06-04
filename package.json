@@ -7,7 +7,7 @@
   "scripts": {
     "package": "npm run clean  && npm run compile  && tfx extension create  --rev-version",
     "gallery-publish": "tfx extension publish --rev-version",
-    "clean": "rimraf ./*.vsix",
+    "clean": "rm -rf ./*.vsix",
     "compile": "tsc -p .",
     "install-task-lib": "cd printAllVariables && npm install --save-dev"
   },

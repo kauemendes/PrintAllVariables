@@ -3,8 +3,8 @@
 	"id": "MBCPPrintAllVariables",
 	"name": "MBCP Print all my variables",
     "description": "Print all my variables in lower case by default or pass a parameter to convert to upper case",
-	"version": "0.0.10",
-	"publisher": "MillenniumBCP",
+	"version": "0.0.12",
+	"publisher": "MillenniumPTBCP",
 	"targets": [{
 		"id": "Microsoft.VisualStudio.Services"
 	}],
