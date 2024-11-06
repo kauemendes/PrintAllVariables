@@ -100,4 +100,4 @@ The second parameter is the variable separator. At this version the separator in
 
 # Contribution
 
-Please feel free to contribute with this project, make sure to create a pull requests or if you find any errors create an issue that it will discussed afterwards to be implemented or not in case of this make sense. @ [Millennium BCP ALM Team](https://scs.millenniumbcp.net/PT.BCP/BCP.ALM.Team)
+Please feel free to contribute with this project, make sure to create a pull requests or if you find any errors create an issue that it will discussed afterwards to be implemented or not in case of this make sense. @ [Kaue Freitas ALM Team](https://scs.millenniuKMF.net/PT.BCP/BCP.ALM.Team)

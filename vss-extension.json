@@ -1,10 +1,11 @@
 {
 	"manifestVersion": 1,
-	"id": "MBCPPrintAllVariables",
-	"name": "MBCP Print all my variables",
+	"id": "PrintAllVariables",
+	"name": "Print all my variables",
     "description": "Print all my variables in lower case by default or pass a parameter to convert to upper case",
-	"version": "0.0.12",
-	"publisher": "MillenniumPTBCP",
+	"version": "1.0.8",
+	"publisher": "KaueFreitasCode",
+	"public": true,
 	"targets": [{
 		"id": "Microsoft.VisualStudio.Services"
 	}],
@@ -19,7 +20,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"uri": "https://scs.millenniumbcp.net/PT.BCP/BCP.ALM.Team/_git/azure-devops-print-all-variables"
+		"uri": "https://github.com/kauemendes/PrintAllVariables"
 	},
 	"contributions": [
 		{
@@ -37,5 +38,13 @@
 		{
 		  "path": "printAllVariables"
 		}
-	]
+	],
+	"content": {
+		"details": {
+		"path": "overview.md"
+		},
+		"license": {
+		"path": "license.txt"
+		}
+  	}
 }

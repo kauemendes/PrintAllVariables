@@ -1,65 +1,21 @@
 {
     "id": "e24e79be-5447-45e2-8387-13bed879d2f4",
-    "name": "MBCPPrintAllVariables",
-    "friendlyName": "MBCP Print All Variables",
-    "description": "MBCP Print all variables in lower case or upper case by your choice",
-    "helpMarkDown": "[More Information](https://scs.millenniumbcp.net/PT.BCP/BCP.ALM.Team/_git/azure-devops-print-all-variables) © Millennium BCP 2020",
+    "name": "PrintAllVariables",
+    "friendlyName": "Print All Variables",
+    "description": "Print all variables",
+    "helpMarkDown": "[More Information](https://dev.azure.com/ptbcp/IT.ALM.Team/_git/azure-devops-mcp-all-variables) © Kaue Freitas 2024",
     "category": "Utility",
     "visibility": ["Build","Release"],
-    "author": "Kaue Mendes @ Millennium BCP 2020",
+    "author": "Kaue Mendes @ Kaue Code 2024",
     "version": {
        "Major": 1,
-       "Minor": 10,
-       "Patch": 1
+       "Minor": 0,
+       "Patch": 8
     },
     "inputs": [
-        {
-            "name": "type_input_transform",
-            "type": "pickList",
-            "label": "How would you like your variables?",
-            "defaultValue": "asItis",
-            "required": true,
-            "helpMarkDown": "Choose how would you like your variables to be re-set, lower case, upper case or leave as it is.",
-            "options": {
-                "lower": "Lower Case",
-                "upper": "Upper Case",
-                "asItis": "Leave as it is"
-            }
-        },
-        {
-            "name": "filtered_variables",
-            "type": "multiLine",
-            "label": "Put your variables name in this list:",
-            "required": false,
-            "helpMarkDown": "To manipulate the environment variables you need to insert in here which variable you would like to transform."
-        },
-        {
-            "name": "change_variable_name",
-            "type": "boolean",
-            "label": "Manipulate Variable NAME",
-            "defaultValue": false,
-            "required": false,
-            "helpMarkDown": "This option enable transforming variable names."
-        },
-        {
-            "name": "change_variable_value",
-            "type": "boolean",
-            "label": "Manipulate Variable VALUE",
-            "defaultValue": false,
-            "required": false,
-            "helpMarkDown": "This option enable transforming variable values."
-        },
-        {
-            "name": "separator_into_variable",
-            "type": "string",
-            "label": "Choose the separator character:",
-            "defaultValue": null,
-            "required": false,
-            "helpMarkDown": "You can choose the separator between the string"
-        }
+        
     ],
-    "instanceNameFormat": "MBCP Print All Variables",
+    "instanceNameFormat": "Print All Variables",
     "execution":
      {"Node":{"target":"printAllVariables.js"}}
-    
  }
