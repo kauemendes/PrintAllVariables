@@ -10,12 +10,24 @@
     "version": {
        "Major": 1,
        "Minor": 0,
-       "Patch": 8
+       "Patch": 9
     },
     "inputs": [
         
     ],
     "instanceNameFormat": "Print All Variables",
-    "execution":
-     {"Node":{"target":"printAllVariables.js"}}
+    "execution": {
+        "Node": {
+            "target":"printAllVariables.js"
+            },
+        "Node10": {
+            "target": "printAllVariables.js"
+        },
+        "Node16": {
+            "target": "printAllVariables.js"
+        },
+        "Node20_1": {
+            "target": "printAllVariables.js"
+        }
+    }
  }

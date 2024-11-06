@@ -3,7 +3,7 @@
 	"id": "PrintAllVariables",
 	"name": "Print all my variables",
     "description": "Print all my variables in lower case by default or pass a parameter to convert to upper case",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"publisher": "KaueFreitasCode",
 	"public": true,
 	"targets": [{
